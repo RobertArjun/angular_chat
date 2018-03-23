@@ -1,0 +1,18 @@
+<div class="navbar">
+  <div id="logo"></div>
+  <div id="heading"><a routerLink="/">MyChat</a></div>
+  <div class="links">
+  <span>
+    <a href="#" *ngIf="!(user|async)?.uid" (click)="login()">Login</a>
+  </span>
+  <span>
+      <a  *ngIf="!(user|async)?.uid" routerLink="/signup">Sign Up</a>
+  </span>
+  <span>
+      <a href="#" id="useremail" *ngIf="(user|async)?.uid">Hello, {{useremail}} </a>
+    </span>
+  <span>
+      <a href="#" *ngIf="(user|async)?.uid" (click)="logout()">Logout</a>
+    </span>
+  </div>
+</div>

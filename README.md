@@ -1,63 +1,28 @@
-# angular_chat
+# MyChat
 
-Angular Configuration:
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.1.
 
-AngularCLI
-npm install -g @angular/cli
+## Development server
 
-Local
-npm install--sav-dev @angular/cli
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Create Project:
-ng new <projectname>
+## Code scaffolding
 
-Run the Project:
-ng serve
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Add Bootstrap
-npm install --save bootstrap //npm install --save bootstrap -g
+## Build
 
-added node angularcli for bootsrtap
- "styles": [
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "styles.css"
-      ],
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-Added font-awsome:
->npm install font-awesome --save
+## Running unit tests
 
-"styles": [
-                "styles.css",
-                "../node_modules/bootstrap/dist/css/bootstrap.css",
-                "../node_modules/font-awesome/css/font-awesome.css" // -here webpack will automatically build a link css element out of this!?
-             ],
-eg:
- <i class="fa fa-american-sign-language-interpreting fa-5x" aria-hidden="true"> </i>    
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Check for update:
-npm install -g npm-check-updates
+## Running end-to-end tests
 
-Check for updated version
-ncu -u
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
 
-----------
-Chat- App
-----------
-Angular Firebase
-npm install --save firebase angularfire2
+## Further help
 
-app.module.ts:
-Add below import
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireAuthModule } from 'angularfire2/auth';
-
- AngularFireModule,
-    AngularFireDatabaseModule,
-    AngularFireAuthModule,
-    AngularFireModule.initializeApp(environment.firebase)
-	
-environment.ts
-create the environment variable for fireebase
-
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

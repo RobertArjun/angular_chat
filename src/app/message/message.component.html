@@ -1,0 +1,10 @@
+<div class="list-group msgWrapper">
+    <a class="list-group-item list-group-item-action flex-column align-items-start mb-2" (click)="selectedMsg(key)">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1 fa fa-paper-plane-o"> {{username}} <p *ngIf="false">{{key}}<p></h5>
+        <small> <i class="fa fa-calendar"></i> {{timestamp}}</small>
+      </div>
+      <p class="mb-1">{{messageContant}}</p>
+      <small class="fa fa-envelope-o">  {{useremail}}</small>
+    </a>
+  </div>
